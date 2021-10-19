@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 async function init () {
     console.log(process.env.MongoUser)
-    resp = await mongoose.connect(`mongodb+srv://${process.env.MongoUser}:${process.env.MongoPass}@redbicicletas.rdrcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
+    resp = await mongoose.connect(`mongodb+srv://${process.env.MONGOUSER}:${process.env.MONGOPASS}@redbicicletas.rdrcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 }
 init();
 

@@ -3,7 +3,7 @@ const models = require("../models/models");
 const mongoose = require('mongoose');
 
 async function init () {
-    resp = await mongoose.connect(`mongodb+srv://${process.env.MongoUser}:${process.env.MongoPass}@redbicicletas.rdrcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
+    resp = await mongoose.connect(`mongodb+srv://${process.env.MONGOUSER}:${process.env.MONGOPASS}@redbicicletas.rdrcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 }
 
 init();
