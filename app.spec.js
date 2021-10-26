@@ -1,5 +1,5 @@
-import app from './app.js'
-import request from 'supertest'
+const app = require ('./app')
+const request = require('supertest')
 
 
 describe('GET /task',()=>{
