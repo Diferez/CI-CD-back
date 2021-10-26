@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
   },
   "author": "Diego Fernando Martinez Osorio",
   "license": "ISC",
@@ -20,6 +21,8 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-plugin-promise": "^5.1.1",
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6"
   }
 }
