@@ -18,7 +18,7 @@ router.route('/').post(async (req, res) => {
     }
 });
 
-router.route('/crear').post(async (req, res) => {
+router.route('/crear'             ).post(async (req, res) => {
     const temp = new models.Usuario({
         nombre : req.body.nombre,
         password : req.body.password,
